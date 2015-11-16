@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'Segment-GoogleAnalytics_Example', :exclusive => true do
+  pod "Segment-GoogleAnalytics", :path => "../"
+end
+
+target 'Segment-GoogleAnalytics_Tests', :exclusive => true do
+  pod "Segment-GoogleAnalytics", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end

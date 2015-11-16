@@ -1,0 +1,7 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited)  "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Analytics" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/GoogleAnalytics" "${PODS_ROOT}/Headers/Public/GoogleIDFASupport" "${PODS_ROOT}/Headers/Public/Segment-GoogleAnalytics" "${PODS_ROOT}/Headers/Public/Specta"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/GoogleAnalytics/Libraries" $(inherited) "${PODS_ROOT}/GoogleIDFASupport/Libraries"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Analytics" -isystem "${PODS_ROOT}/Headers/Public/Expecta" -isystem "${PODS_ROOT}/Headers/Public/GoogleAnalytics" -isystem "${PODS_ROOT}/Headers/Public/GoogleIDFASupport" -isystem "${PODS_ROOT}/Headers/Public/Segment-GoogleAnalytics" -isystem "${PODS_ROOT}/Headers/Public/Specta"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AdIdAccessLibrary" -l"Analytics" -l"Expecta" -l"GoogleAnalytics" -l"Segment-GoogleAnalytics" -l"Specta" -l"sqlite3" -l"z" -framework "AdSupport" -framework "CoreData" -framework "Foundation" -framework "SystemConfiguration" -framework "XCTest"
+PODS_ROOT = ${SRCROOT}/Pods
