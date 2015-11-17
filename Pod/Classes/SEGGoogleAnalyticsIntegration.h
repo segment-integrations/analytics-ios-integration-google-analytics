@@ -2,6 +2,7 @@
 #import <Analytics/SEGIntegration.h>
 #import <GoogleAnalytics/GAI.h>
 
+
 @interface SEGGoogleAnalyticsIntegration : NSObject <SEGIntegration>
 
 @property (nonatomic, copy) NSDictionary *settings;
