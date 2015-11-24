@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '04083B41B4D0C70F16312A51'
+               BlueprintIdentifier = 'F01830C0FF2E9E59A9ED6845'
                BlueprintName = 'Segment-GoogleAnalytics'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libSegment-GoogleAnalytics.a'>

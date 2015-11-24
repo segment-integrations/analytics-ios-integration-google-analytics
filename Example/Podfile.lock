@@ -1,10 +1,10 @@
 PODS:
-  - Analytics (3.0.2-alpha)
+  - Analytics (3.0.0)
   - Expecta (1.0.5)
   - GoogleAnalytics (3.14.0)
   - GoogleIDFASupport (3.14.0)
-  - Segment-GoogleAnalytics (3.14.0-alpha):
-    - Analytics (~> 3.0.2-alpha)
+  - Segment-GoogleAnalytics (1.0.0-alpha):
+    - Analytics (~> 3.0.0)
     - GoogleAnalytics (~> 3.14)
     - GoogleIDFASupport (~> 3.14)
   - Specta (1.0.5)
@@ -19,11 +19,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Analytics: a9794c7b948c0208c6e15653e3871b30c3dc37ad
+  Analytics: 3ebd9eee7aa18bbf7d6418f2290b0bbf694144d5
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
   GoogleIDFASupport: aaf8c10bd429abb1c15349d5252244f5eda8ead1
-  Segment-GoogleAnalytics: a91ec757b613cca74834371f0c7ae00350fb36a3
+  Segment-GoogleAnalytics: 5253ee2c8e96f1576fdde6f63dffff24068dafdd
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
 
 COCOAPODS: 0.39.0
