@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+Version 1.0.1 *(26th November, 2015)*
+-------------------------------------------
+*(Supports analytics-ios 3.0.+ and Google Analytics 3.14.+)*
+
+ * Fix bug where using custom dimensions and metrics would crash.
+
 Version 1.0.0 *(24th November, 2015)*
 -------------------------------------------
 *(Supports analytics-ios 3.0.+ and Google Analytics 3.14.+)*
