@@ -170,16 +170,14 @@
 
     for (NSString *key in properties) {
         NSString *dimensionString = [customDimensions objectForKey:key];
-        // [@"dimension" length] == 8
-        NSUInteger dimension = [self extractNumber:dimensionString from:8];
+        NSUInteger dimension = [self extractNumber:dimensionString from:[@"dimension" length]];
         if (dimension != 0) {
             [hit set:[properties objectForKey:key]
                 forKey:[GAIFields customDimensionForIndex:dimension]];
         }
 
         NSString *metricString = [customMetrics objectForKey:key];
-        // [@"metric" length] == 5
-        NSUInteger metric = [self extractNumber:metricString from:5];
+        NSUInteger metric = [self extractNumber:metricString from:[@"metric" length]];
         if (metric != 0) {
             [hit set:[properties objectForKey:key]
                 forKey:[GAIFields customMetricForIndex:metric]];
@@ -189,8 +187,8 @@
     return [hit build];
 }
 
-// e.g. extractNumber("dimension3", 8) returns 3
-// e.g. extractNumber("metric9", 5) returns 9
+// e.g. extractNumber:"dimension3" from:[@"dimension" length] returns 3
+// e.g. extractNumber:"metric9" from:[@"metric" length] returns 9
 - (int)extractNumber:(NSString *)text from:(NSUInteger)start
 {
     if (text == nil || [text length] == 0) {
@@ -207,16 +205,14 @@
 
     for (NSString *key in traits) {
         NSString *dimensionString = [customDimensions objectForKey:key];
-        // [@"dimension" length] == 8
-        NSUInteger dimension = [self extractNumber:dimensionString from:8];
+        NSUInteger dimension = [self extractNumber:dimensionString from:[@"dimension" length]];
         if (dimension != 0) {
             [self.tracker set:[GAIFields customDimensionForIndex:dimension]
                         value:[traits objectForKey:key]];
         }
 
         NSString *metricString = [customMetrics objectForKey:key];
-        // [@"metric" length] == 5
-        NSUInteger metric = [self extractNumber:metricString from:5];
+        NSUInteger metric = [self extractNumber:metricString from:[@"metric" length]];
         if (metric != 0) {
             [self.tracker set:[GAIFields customMetricForIndex:metric]
                         value:[traits objectForKey:key]];
