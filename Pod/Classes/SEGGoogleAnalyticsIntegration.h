@@ -1,7 +1,8 @@
 #import <Foundation/Foundation.h>
 #import <Analytics/SEGIntegration.h>
-#import <GoogleAnalytics/GAI.h>
+//#import <GoogleAnalytics/GAI.h>
 
+@protocol GAITracker;
 
 @interface SEGGoogleAnalyticsIntegration : NSObject <SEGIntegration>
 
