@@ -23,5 +23,14 @@ Pod::Spec.new do |s|
 
   s.dependency 'Analytics', '~> 3.0.0'
   s.dependency 'GoogleAnalytics', '~> 3.14'
-  s.dependency 'GoogleIDFASupport', '~> 3.14'
+
+  s.subspec 'GoogleIDFASupport' do |idfa|
+    # This will get bundled unless a subspec is specified
+    idfa.dependency 'GoogleIDFASupport', '~> 3.14'
+  end
+
+  s.subspec 'Core' do |core|
+    # For users who don't want to bundle GoogleIDFASupport
+    # If a user specified Segment-GoogleAnalytics/Core, we won't bundle IDFA
+  end
 end
