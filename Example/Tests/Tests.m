@@ -10,20 +10,22 @@
 
 SpecBegin(InitialSpecs);
 
-describe(@"these will pass", ^{
-    
-    it(@"can do maths", ^{
-        expect(1).beLessThan(23);
+describe(@"SEGGoogleAnalyticsIntegrationFactory", ^{
+    it(@"factory creates integration with empty settings", ^{
+        SEGGoogleAnalyticsIntegration *integration = [[SEGGoogleAnalyticsIntegrationFactory instance] createWithSettings:@{
+                                                                                                               } forAnalytics:nil];
+        
+        expect(integration.settings).to.equal(@{});
     });
-    
-    it(@"can read", ^{
-        expect(@"team").toNot.contain(@"I");
-    });
-    
-    it(@"will wait and succeed", ^{
-        waitUntil(^(DoneCallback done) {
-            done();
-        });
+});
+
+describe(@"SEGGoogleAnalyticsIntegrationFactory", ^{
+    it(@"factory creates integration with basic settings", ^{
+        SEGGoogleAnalyticsIntegration *integration = [[SEGGoogleAnalyticsIntegrationFactory instance] createWithSettings:@{
+                                                                                                               @"mobileTrackingId" : @"foo"
+                                                                                                               } forAnalytics:nil];
+        
+        expect(integration.settings).to.equal(@{ @"mobileTrackingId" : @"foo" });
     });
 });
 
