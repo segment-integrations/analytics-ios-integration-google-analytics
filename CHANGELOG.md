@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+Version 1.1.0 *(11th May, 2016)*
+-------------------------------------------
+*(Supports analytics-ios 3.0.+ and Google Analytics 3.14.+)*
+
+ * Add Core subspec for optional exclusion of Google IDFA Support
+
 Version 1.0.1 *(26th November, 2015)*
 -------------------------------------------
 *(Supports analytics-ios 3.0.+ and Google Analytics 3.14.+)*
