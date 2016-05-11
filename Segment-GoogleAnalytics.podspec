@@ -21,17 +21,17 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
 
-  s.default_subspec = 'NoIDFA'
-
   s.dependency 'Analytics', '~> 3.0.0'
   s.dependency 'GoogleAnalytics', '~> 3.14'
 
-  s.subspec 'NoIDFA' do |noidfa|
-  # subspec for users who don't want the IDFA Support
-  end
-
   s.subspec 'GoogleIDFASupport' do |idfa|
+    # This will get bundled unless a subspec is specified
     idfa.xcconfig = { 'OTHER_CFLAGS' => '$(inherited) -SEGMENT_IDFA' }
     idfa.dependency 'GoogleIDFASupport', '~> 3.14'
+  end
+
+  s.supbspec 'Core' do |core|
+  # For users who don't want to bundle GoogleIDFASupport
+  # If a user specified Segment-GoogleAnalytics/Core, we won't bundle IDFA
   end
 end
