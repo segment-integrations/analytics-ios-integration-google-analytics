@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
 
-  s.dependency 'Analytics', '~> 3.0.0'
+  s.dependency 'Analytics', '~> 3.0'
   s.dependency 'GoogleAnalytics', '~> 3.14'
 
   s.subspec 'GoogleIDFASupport' do |idfa|
