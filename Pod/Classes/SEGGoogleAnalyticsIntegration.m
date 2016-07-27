@@ -79,7 +79,7 @@
 
 - (void)track:(SEGTrackPayload *)payload
 {
-    if ([payload.event isEqualToString: @"Order Completed"] || [payload.event  isEqualToString: @"Completed Order"]) {
+    if ([payload.event isEqualToString: @"Order Completed"]) {
         [self completedOrder:payload.properties];
         return;
     }
