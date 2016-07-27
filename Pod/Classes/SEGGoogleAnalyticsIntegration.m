@@ -80,7 +80,7 @@
 - (void)track:(SEGTrackPayload *)payload
 {
     if ([payload.event isEqualToString: @"Order Completed"]) {
-        [self completedOrder:payload.properties];
+        [self orderCompleted:payload.properties];
         return;
     }
     
@@ -125,7 +125,7 @@
 
 #pragma mark - Ecommerce
 
-- (void)completedOrder:(NSDictionary *)properties
+- (void)orderCompleted:(NSDictionary *)properties
 {
     NSString *orderId = properties[@"orderId"];
     NSString *currency = properties[@"currency"] ?: @"USD";
