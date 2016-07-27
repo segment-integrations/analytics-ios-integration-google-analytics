@@ -79,6 +79,11 @@
 
 - (void)track:(SEGTrackPayload *)payload
 {
+    if ([payload.event isEqualToString: @"Order Completed"] || [payload.event  isEqualToString: @"Completed Order"]) {
+        [self completedOrder:payload.properties];
+        return;
+    }
+    
     // Try to extract a "category" property.
     NSString *category = @"All"; // default
     NSString *categoryProperty = [payload.properties objectForKey:@"category"];
