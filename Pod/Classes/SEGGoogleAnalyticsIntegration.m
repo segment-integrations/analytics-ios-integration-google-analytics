@@ -3,7 +3,7 @@
 #import <Analytics/SEGAnalyticsUtils.h>
 #import <Analytics/SEGAnalytics.h>
 #import "SEGGoogleAnalyticsIntegration.h"
-
+#import <GoogleAnalytics/GAI.h>
 
 @implementation SEGGoogleAnalyticsIntegration
 
