@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+Version 1.1.4 *(14th September, 2016)*
+-------------------------------------------
+*(Supports analytics-ios 3.+)*
+
+* Fix: Prevent error 'include of non-modular header inside framework module'.
+
 Version 1.1.3 *(27th July, 2016)*
 -------------------------------------------
 *(Supports analytics-ios 3.0.+)*
