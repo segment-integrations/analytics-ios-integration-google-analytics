@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57AEB84F303148BFBF22F6E0 /* libPods-Segment-GoogleAnalytics_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1EB12FD425CB6B29525179 /* libPods-Segment-GoogleAnalytics_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +21,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		FB613A1240C6B0DF5B76949F /* libPods-Segment-GoogleAnalytics_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C911FE4B641761C273BD55 /* libPods-Segment-GoogleAnalytics_Tests.a */; };
+		9B082B698A53385BA8B83CE6 /* libPods-Segment-GoogleAnalytics_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC71A35D007A75003F37C9 /* libPods-Segment-GoogleAnalytics_Example.a */; };
+		B4743DDA55C2B6DEBAAEC2B3 /* libPods-Segment-GoogleAnalytics_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2515F209CDF2FCB782B66D2A /* libPods-Segment-GoogleAnalytics_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3C7D54F3981338DCF72E8DC6 /* Pods-Segment-GoogleAnalytics_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-GoogleAnalytics_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Example/Pods-Segment-GoogleAnalytics_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4B1EB12FD425CB6B29525179 /* libPods-Segment-GoogleAnalytics_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Segment-GoogleAnalytics_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5432567472E80719DC676AB7 /* Pods-Segment-GoogleAnalytics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-GoogleAnalytics_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Tests/Pods-Segment-GoogleAnalytics_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		23FC71A35D007A75003F37C9 /* libPods-Segment-GoogleAnalytics_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Segment-GoogleAnalytics_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2515F209CDF2FCB782B66D2A /* libPods-Segment-GoogleAnalytics_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Segment-GoogleAnalytics_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D2804E409FC7105A66AA39B /* Pods-Segment-GoogleAnalytics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-GoogleAnalytics_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Example/Pods-Segment-GoogleAnalytics_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* Segment-GoogleAnalytics_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Segment-GoogleAnalytics_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,13 +58,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		61D7F4F112C707EC84C56AE2 /* Pods-Segment-GoogleAnalytics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-GoogleAnalytics_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Tests/Pods-Segment-GoogleAnalytics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		69F6E0C92C20823DECAFC8C1 /* Segment-GoogleAnalytics.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Segment-GoogleAnalytics.podspec"; path = "../Segment-GoogleAnalytics.podspec"; sourceTree = "<group>"; };
 		7A4CAF4607AED5EA7731BDD3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		86BD72121A8528E7506F8750 /* Pods-Segment-GoogleAnalytics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-GoogleAnalytics_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Tests/Pods-Segment-GoogleAnalytics_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		93C911FE4B641761C273BD55 /* libPods-Segment-GoogleAnalytics_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Segment-GoogleAnalytics_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FC9EB04B6712D1A3D695FD /* Pods-Segment-GoogleAnalytics_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-GoogleAnalytics_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Example/Pods-Segment-GoogleAnalytics_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A0C2C92A6F278340F1799027 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		DB540225FEECA79A5823655B /* Pods-Segment-GoogleAnalytics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-GoogleAnalytics_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Example/Pods-Segment-GoogleAnalytics_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CB6C02B1049129BF0C328919 /* Pods-Segment-GoogleAnalytics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-GoogleAnalytics_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Tests/Pods-Segment-GoogleAnalytics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				57AEB84F303148BFBF22F6E0 /* libPods-Segment-GoogleAnalytics_Example.a in Frameworks */,
+				9B082B698A53385BA8B83CE6 /* libPods-Segment-GoogleAnalytics_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,13 +86,24 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				FB613A1240C6B0DF5B76949F /* libPods-Segment-GoogleAnalytics_Tests.a in Frameworks */,
+				B4743DDA55C2B6DEBAAEC2B3 /* libPods-Segment-GoogleAnalytics_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EB5ED9CAF4965E22A0ED0F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95FC9EB04B6712D1A3D695FD /* Pods-Segment-GoogleAnalytics_Example.debug.xcconfig */,
+				4D2804E409FC7105A66AA39B /* Pods-Segment-GoogleAnalytics_Example.release.xcconfig */,
+				CB6C02B1049129BF0C328919 /* Pods-Segment-GoogleAnalytics_Tests.debug.xcconfig */,
+				86BD72121A8528E7506F8750 /* Pods-Segment-GoogleAnalytics_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +112,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				B59939D8465E109F0AEDBB4B /* Pods */,
+				1EB5ED9CAF4965E22A0ED0F3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +132,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				4B1EB12FD425CB6B29525179 /* libPods-Segment-GoogleAnalytics_Example.a */,
-				93C911FE4B641761C273BD55 /* libPods-Segment-GoogleAnalytics_Tests.a */,
+				23FC71A35D007A75003F37C9 /* libPods-Segment-GoogleAnalytics_Example.a */,
+				2515F209CDF2FCB782B66D2A /* libPods-Segment-GoogleAnalytics_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,17 +193,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		B59939D8465E109F0AEDBB4B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3C7D54F3981338DCF72E8DC6 /* Pods-Segment-GoogleAnalytics_Example.debug.xcconfig */,
-				DB540225FEECA79A5823655B /* Pods-Segment-GoogleAnalytics_Example.release.xcconfig */,
-				61D7F4F112C707EC84C56AE2 /* Pods-Segment-GoogleAnalytics_Tests.debug.xcconfig */,
-				5432567472E80719DC676AB7 /* Pods-Segment-GoogleAnalytics_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,12 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "Segment-GoogleAnalytics_Example" */;
 			buildPhases = (
-				1EC630691D68D77C4CAB8F9A /* Check Pods Manifest.lock */,
+				2E8CB837E2BFAC94A5F2AF1D /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				CD66061DCD7C2B85F849D4B7 /* Embed Pods Frameworks */,
-				F3AC382D7763599B0BD30CC6 /* Copy Pods Resources */,
+				39A29C37038C17A78234E62D /* [CP] Embed Pods Frameworks */,
+				00FE2443EDDA513BA362DA6C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,12 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Segment-GoogleAnalytics_Tests" */;
 			buildPhases = (
-				29B1C655DC99C56EFAA85C56 /* Check Pods Manifest.lock */,
+				621F0FF5A6CF966AACBBEAA8 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				B4990ABF5734CC2321C564DF /* Embed Pods Frameworks */,
-				AC7A05EA31A71169CD3EE1A8 /* Copy Pods Resources */,
+				4EA21B7224D2C8AD9DB6E729 /* [CP] Embed Pods Frameworks */,
+				F39458F7E1118C841E10BAC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,14 +293,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1EC630691D68D77C4CAB8F9A /* Check Pods Manifest.lock */ = {
+		00FE2443EDDA513BA362DA6C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Example/Pods-Segment-GoogleAnalytics_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E8CB837E2BFAC94A5F2AF1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,59 +323,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		29B1C655DC99C56EFAA85C56 /* Check Pods Manifest.lock */ = {
+		39A29C37038C17A78234E62D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AC7A05EA31A71169CD3EE1A8 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Tests/Pods-Segment-GoogleAnalytics_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B4990ABF5734CC2321C564DF /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Tests/Pods-Segment-GoogleAnalytics_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD66061DCD7C2B85F849D4B7 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,19 +338,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Example/Pods-Segment-GoogleAnalytics_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F3AC382D7763599B0BD30CC6 /* Copy Pods Resources */ = {
+		4EA21B7224D2C8AD9DB6E729 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Example/Pods-Segment-GoogleAnalytics_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Tests/Pods-Segment-GoogleAnalytics_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		621F0FF5A6CF966AACBBEAA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F39458F7E1118C841E10BAC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Segment-GoogleAnalytics_Tests/Pods-Segment-GoogleAnalytics_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -508,7 +508,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C7D54F3981338DCF72E8DC6 /* Pods-Segment-GoogleAnalytics_Example.debug.xcconfig */;
+			baseConfigurationReference = 95FC9EB04B6712D1A3D695FD /* Pods-Segment-GoogleAnalytics_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -524,7 +524,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB540225FEECA79A5823655B /* Pods-Segment-GoogleAnalytics_Example.release.xcconfig */;
+			baseConfigurationReference = 4D2804E409FC7105A66AA39B /* Pods-Segment-GoogleAnalytics_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -540,7 +540,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61D7F4F112C707EC84C56AE2 /* Pods-Segment-GoogleAnalytics_Tests.debug.xcconfig */;
+			baseConfigurationReference = CB6C02B1049129BF0C328919 /* Pods-Segment-GoogleAnalytics_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -559,7 +559,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5432567472E80719DC676AB7 /* Pods-Segment-GoogleAnalytics_Tests.release.xcconfig */;
+			baseConfigurationReference = 86BD72121A8528E7506F8750 /* Pods-Segment-GoogleAnalytics_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = "";
