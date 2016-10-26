@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
     # If a user specified Segment-GoogleAnalytics/Core, we won't bundle IDFA
   end
 
-  s.subspec 'StaticLibWorkaround' do |wordaround|
+  s.subspec 'StaticLibWorkaround' do |workaround|
     # For users who are unable to bundle static libraries as dependencies
     # you can choose this subspec, but be sure to include the following in your Podfile:
     # pod 'GoogleAnalytics'
