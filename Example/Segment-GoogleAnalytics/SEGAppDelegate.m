@@ -14,7 +14,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    SEGAnalyticsConfiguration *config = [SEGAnalyticsConfiguration configurationWithWriteKey:@"QUI5ydwIGeFFTa1IvCBUhxL9PyW5B0jE"];
+    // https://segment.com/ladanazita/sources/ios_test/settings/keys
+    SEGAnalyticsConfiguration *config = [SEGAnalyticsConfiguration configurationWithWriteKey:@"ACIG3kwqCUsWZBfYxZDu0anuGwP3XtWW"];
     [config use:[SEGGoogleAnalyticsIntegrationFactory instance]];
     [SEGAnalytics setupWithConfiguration:config];
     [[SEGAnalytics sharedAnalytics] track:@"Test Google Analytics"];
