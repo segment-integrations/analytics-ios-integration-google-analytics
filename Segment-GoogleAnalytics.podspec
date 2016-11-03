@@ -22,7 +22,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Pod/Classes/**/*'
 
   s.dependency 'Analytics', '~> 3.0'
-  s.dependency 'GoogleAnalytics', '~> 3.14'
 
   s.subspec 'GoogleIDFASupport' do |idfa|
     # This will get bundled unless a subspec is specified
@@ -30,7 +29,15 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Core' do |core|
+    core.dependency 'GoogleAnalytics', '~> 3.14'
     # For users who don't want to bundle GoogleIDFASupport
     # If a user specified Segment-GoogleAnalytics/Core, we won't bundle IDFA
+  end
+
+  s.subspec 'StaticLibWorkaround' do |workaround|
+    # For users who are unable to bundle static libraries as dependencies
+    # you can choose this subspec, but be sure to include the following in your Podfile:
+    # pod 'GoogleAnalytics'
+    # pod 'GoogleIDFASupport'  <- optional
   end
 end
