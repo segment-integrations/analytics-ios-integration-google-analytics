@@ -8,7 +8,10 @@
 
 #import "SEGAppDelegate.h"
 #import <Analytics/SEGAnalytics.h>
-#import <Segment-GoogleAnalytics/SEGGoogleAnalyticsIntegrationFactory.h>
+// Used together with `use_frameworks!`
+#import "SEGGoogleAnalyticsIntegrationFactory.h"
+// Used without `use_frameworks!`
+//#import <Segment-GoogleAnalytics/SEGGoogleAnalyticsIntegrationFactory.h>
 
 @implementation SEGAppDelegate
 

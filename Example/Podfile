@@ -1,6 +1,34 @@
-target 'Segment-GoogleAnalytics_Example' do
-  pod 'Segment-GoogleAnalytics', :path => '../'
+## Without use_frameworks!
 
+#target 'Segment-GoogleAnalytics_Example' do
+#    # Use default subspec
+##  pod 'Segment-GoogleAnalytics', :path => '../'
+#    # Use default `GoogleIDFASupport` explicitly
+##  pod 'Segment-GoogleAnalytics/GoogleIDFASupport', :path => '../'
+#    # Use only `Segment-GoogleAnalytics/Core`
+##  pod 'Segment-GoogleAnalytics/Core', :path => '../'
+#
+#  target 'Segment-GoogleAnalytics_Tests' do
+#    inherit! :search_paths
+#
+#    pod 'OCMockito'
+#    pod 'Specta'
+#    pod 'Expecta'
+#  end
+#end
+#
+
+
+## With use_frameworks!
+
+# Use only `Segment-GoogleAnalytics/StaticLibWorkaround`
+use_frameworks!
+
+target 'Segment-GoogleAnalytics_Example' do
+  pod 'Segment-GoogleAnalytics/StaticLibWorkaround', :path => '../'
+  pod 'GoogleAnalytics'
+  pod 'GoogleIDFASupport'
+    
   target 'Segment-GoogleAnalytics_Tests' do
     inherit! :search_paths
 
@@ -9,3 +37,4 @@ target 'Segment-GoogleAnalytics_Example' do
     pod 'Expecta'
   end
 end
+

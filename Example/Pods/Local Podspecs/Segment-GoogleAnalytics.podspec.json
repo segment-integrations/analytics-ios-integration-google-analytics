@@ -19,26 +19,35 @@
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
   "dependencies": {
     "Analytics": [
       "~> 3.0"
-    ],
-    "GoogleAnalytics": [
-      "~> 3.14"
     ]
   },
+  "default_subspecs": "GoogleIDFASupport",
   "subspecs": [
     {
       "name": "GoogleIDFASupport",
       "dependencies": {
+        "Segment-GoogleAnalytics/Core": [
+
+        ],
         "GoogleIDFASupport": [
           "~> 3.14"
         ]
       }
     },
     {
-      "name": "Core"
+      "name": "Core",
+      "source_files": "Pod/Classes/**/*",
+      "dependencies": {
+        "GoogleAnalytics": [
+          "~> 3.14"
+        ]
+      }
+    },
+    {
+      "name": "StaticLibWorkaround"
     }
   ]
 }
