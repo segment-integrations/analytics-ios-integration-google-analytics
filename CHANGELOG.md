@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+Version 1.1.5 *(4th November, 2016)*
+-------------------------------------------
+*(Supports analytics-ios 3.+ and Google Analytics 3.14.+)*
+
+* Add subspec for static library workaround.
+
 Version 1.1.4 *(14th September, 2016)*
 -------------------------------------------
 *(Supports analytics-ios 3.+)*
