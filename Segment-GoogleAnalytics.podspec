@@ -40,5 +40,7 @@ Pod::Spec.new do |s|
     # you can choose this subspec, but be sure to include the following in your Podfile:
     # pod 'GoogleAnalytics'
     # pod 'GoogleIDFASupport'  <- optional
+    # Please manually add the following file preserved by Cocoapods to your your xcodeproj file
+    workaround.preserve_paths = 'Pod/Classes/**/*'
   end
 end
