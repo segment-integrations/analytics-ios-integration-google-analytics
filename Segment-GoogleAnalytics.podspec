@@ -19,18 +19,28 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-
   s.dependency 'Analytics', '~> 3.0'
-  s.dependency 'GoogleAnalytics', '~> 3.14'
+  s.default_subspec = 'GoogleIDFASupport'
 
   s.subspec 'GoogleIDFASupport' do |idfa|
     # This will get bundled unless a subspec is specified
+    idfa.dependency 'Segment-GoogleAnalytics/Core'
     idfa.dependency 'GoogleIDFASupport', '~> 3.14'
   end
 
   s.subspec 'Core' do |core|
+    core.source_files = 'Pod/Classes/**/*'
+    core.dependency 'GoogleAnalytics', '~> 3.14'
     # For users who don't want to bundle GoogleIDFASupport
     # If a user specified Segment-GoogleAnalytics/Core, we won't bundle IDFA
+  end
+
+  s.subspec 'StaticLibWorkaround' do |workaround|
+    # For users who are unable to bundle static libraries as dependencies
+    # you can choose this subspec, but be sure to include the following in your Podfile:
+    # pod 'GoogleAnalytics'
+    # pod 'GoogleIDFASupport'  <- optional
+    # Please manually add the following file preserved by Cocoapods to your your xcodeproj file
+    workaround.preserve_paths = 'Pod/Classes/**/*'
   end
 end
