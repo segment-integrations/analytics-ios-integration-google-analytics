@@ -146,16 +146,24 @@
                                                                   currencyCode:currency] build];
     [self.tracker send:transaction];
     SEGLog(@"[[[GAI sharedInstance] defaultTracker] send:%@];", transaction);
-
-    NSDictionary *item = [[GAIDictionaryBuilder createItemWithTransactionId:orderId
-                                                                       name:properties[@"name"]
-                                                                        sku:properties[@"sku"]
-                                                                   category:properties[@"category"]
-                                                                      price:properties[@"price"]
-                                                                   quantity:properties[@"quantity"]
-                                                               currencyCode:currency] build];
-    [self.tracker send:item];
-    SEGLog(@"[[[GAI sharedInstance] defaultTracker] send:%@];", item);
+    
+    NSArray *products = properties[@"products"];
+    if (products == nil) {
+        products = @[];
+    }
+    
+    for (NSDictionary *product in products) {
+        NSDictionary *item = [[GAIDictionaryBuilder createItemWithTransactionId:orderId
+                                                                           name:product[@"name"]
+                                                                            sku:product[@"sku"]
+                                                                       category:product[@"category"]
+                                                                          price:product[@"price"]
+                                                                       quantity:product[@"quantity"]
+                                                                   currencyCode:currency] build];
+        [self.tracker send:item];
+        SEGLog(@"[[[GAI sharedInstance] defaultTracker] send:%@];", item);
+    }
+    
 }
 
 - (void)reset
