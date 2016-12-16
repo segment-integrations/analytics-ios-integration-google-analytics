@@ -8,12 +8,32 @@ Google Analytics integration for analytics-ios.
 
 ## Installation
 
-Analytics is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your `Podfile`:
+To install the Segment-Mixpanel integration, simply add this line to your [CocoaPods](http://cocoapods.org) `Podfile`:
 
 ```ruby
 pod "Segment-GoogleAnalytics"
 ```
+
+## Usage
+
+After adding the dependency, you must register the integration with our SDK.  To do this, import the Mixpanel integration in your `AppDelegate`:
+
+```
+#import <Segment-GoogleAnalytics/SEGGoogleAnalyticsIntegrationFactory.h>
+```
+
+And add the following lines:
+
+```
+NSString *const SEGMENT_WRITE_KEY = @" ... ";
+SEGAnalyticsConfiguration *config = [SEGAnalyticsConfiguration configurationWithWriteKey:SEGMENT_WRITE_KEY];
+
+[config use:[SEGGoogleAnalyticsIntegrationFactory instance]];
+
+[SEGAnalytics setupWithConfiguration:config];
+
+```
+
 
 ## License
 
