@@ -204,7 +204,7 @@
 // e.g. extractNumber:"metric9" from:[@"metric" length] returns 9
 - (int)extractNumber:(NSString *)text from:(NSUInteger)start
 {
-    if (text == nil || [text length] == 0) {
+    if (start > [text length]-1) {
         return 0;
     }
     return [[text substringFromIndex:start] intValue];
