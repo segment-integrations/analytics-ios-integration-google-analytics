@@ -131,15 +131,18 @@
     if ([campaign isKindOfClass:[NSDictionary class]]) {
         if ([campaign[@"source"] isKindOfClass:[NSString class]]) {
             [hitBuilder set:campaign[@"source"] forKey:kGAICampaignSource];
-        }
-        if ([campaign[@"name"] isKindOfClass:[NSString class]]) {
-            [hitBuilder set:campaign[@"name"] forKey:kGAICampaignName];
-        }
-        if ([campaign[@"content"] isKindOfClass:[NSString class]]) {
-            [hitBuilder set:campaign[@"content"] forKey:kGAICampaignContent];
-        }
-        if ([campaign[@"medium"] isKindOfClass:[NSString class]]) {
-            [hitBuilder set:campaign[@"medium"] forKey:kGAICampaignMedium];
+            if ([campaign[@"name"] isKindOfClass:[NSString class]]) {
+                [hitBuilder set:campaign[@"name"] forKey:kGAICampaignName];
+            }
+            if ([campaign[@"content"] isKindOfClass:[NSString class]]) {
+                [hitBuilder set:campaign[@"content"] forKey:kGAICampaignContent];
+            }
+            if ([campaign[@"medium"] isKindOfClass:[NSString class]]) {
+                [hitBuilder set:campaign[@"medium"] forKey:kGAICampaignMedium];
+            }
+        } else {
+            // https://developers.google.com/analytics/devguides/collection/ios/v3/campaigns
+            SEGLog(@"WARNING: campaign source is a required field for GA. Omitting campaign attributes");
         }
         // Segment does not currently spec the following keys that GA accepts
         // kGAICampaignKeyword
