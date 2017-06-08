@@ -126,6 +126,28 @@
     SEGLog(@"[[[GAI sharedInstance] defaultTracker] set:%@ value:%@];", kGAIScreenName, payload.name);
 
     GAIDictionaryBuilder *hitBuilder = [GAIDictionaryBuilder createScreenView];
+    
+    NSDictionary *campaign = payload.properties[@"campaign"];
+    if ([campaign isKindOfClass:[NSDictionary class]]) {
+        if ([campaign[@"source"] isKindOfClass:[NSString class]]) {
+            [hitBuilder set:campaign[@"source"] forKey:kGAICampaignSource];
+        }
+        if ([campaign[@"name"] isKindOfClass:[NSString class]]) {
+            [hitBuilder set:campaign[@"name"] forKey:kGAICampaignName];
+        }
+        if ([campaign[@"content"] isKindOfClass:[NSString class]]) {
+            [hitBuilder set:campaign[@"content"] forKey:kGAICampaignContent];
+        }
+        if ([campaign[@"medium"] isKindOfClass:[NSString class]]) {
+            [hitBuilder set:campaign[@"medium"] forKey:kGAICampaignMedium];
+        }
+        // Segment does not currently spec the following keys that GA accepts
+        // kGAICampaignKeyword
+        // kGAICampaignId
+        // kGAICampaignAdNetworkClickId
+        // kGAICampaignAdNetworkId
+    }
+    
     NSDictionary *hit = [self setCustomDimensionsAndMetrics:payload.properties onHit:hitBuilder];
     [self.tracker send:hit];
     SEGLog(@"[[[GAI sharedInstance] defaultTracker] send:%@];", hit);
