@@ -1,6 +1,6 @@
 {
   "name": "Segment-GoogleAnalytics",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "summary": "Google Analytics Integration for Segment's analytics-ios library.",
   "description": "Analytics for iOS provides a single API that lets you\nintegrate with over 100s of tools.\n\nThis is the Google Analytics integration for the iOS library.",
   "homepage": "http://segment.com/",
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/segment-integrations/analytics-ios-integration-google-analytics.git",
-    "tag": "1.1.4"
+    "tag": "1.1.5"
   },
   "social_media_url": "https://twitter.com/segment",
   "platforms": {
@@ -47,7 +47,8 @@
       }
     },
     {
-      "name": "StaticLibWorkaround"
+      "name": "StaticLibWorkaround",
+      "preserve_paths": "Pod/Classes/**/*"
     }
   ]
 }
