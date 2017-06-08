@@ -127,7 +127,7 @@
 
     GAIDictionaryBuilder *hitBuilder = [GAIDictionaryBuilder createScreenView];
     
-    NSDictionary *campaign = payload.properties[@"campaign"];
+    NSDictionary *campaign = payload.context[@"campaign"];
     if ([campaign isKindOfClass:[NSDictionary class]]) {
         if ([campaign[@"source"] isKindOfClass:[NSString class]]) {
             [hitBuilder set:campaign[@"source"] forKey:kGAICampaignSource];
