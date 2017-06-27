@@ -87,11 +87,11 @@
 
 - (void)track:(SEGTrackPayload *)payload
 {
-    if ([payload.event isEqualToString: @"Order Completed"]) {
+    if ([payload.event isEqualToString:@"Order Completed"]) {
         [self orderCompleted:payload.properties];
         return;
     }
-    
+
     // Try to extract a "category" property.
     NSString *category = @"All"; // default
     NSString *categoryProperty = [payload.properties objectForKey:@"category"];
@@ -126,9 +126,9 @@
     SEGLog(@"[[[GAI sharedInstance] defaultTracker] set:%@ value:%@];", kGAIScreenName, payload.name);
 
     GAIDictionaryBuilder *hitBuilder = [GAIDictionaryBuilder createScreenView];
-    
+
     NSDictionary *hit = [self setCustomDimensionsAndMetricsAndCampaignData:payload.properties context:payload.context onHit:hitBuilder];
-        
+
     [self.tracker send:hit];
     SEGLog(@"[[[GAI sharedInstance] defaultTracker] send:%@];", hit);
 }
@@ -198,21 +198,21 @@
                 forKey:[GAIFields customMetricForIndex:metric]];
         }
     }
-    
+
     NSDictionary *campaign = context[@"campaign"];
     if ([campaign isKindOfClass:[NSDictionary class]]) {
         if ([campaign[@"source"] isKindOfClass:[NSString class]]) {
             [hit set:campaign[@"source"] forKey:kGAICampaignSource];
-        if ([campaign[@"name"] isKindOfClass:[NSString class]]) {
-            [hit set:campaign[@"name"] forKey:kGAICampaignName];
-        }
-        if ([campaign[@"content"] isKindOfClass:[NSString class]]) {
-            [hit set:campaign[@"content"] forKey:kGAICampaignContent];
-        }
-        if ([campaign[@"medium"] isKindOfClass:[NSString class]]) {
-            [hit set:campaign[@"medium"] forKey:kGAICampaignMedium];
-        }
-    } else {
+            if ([campaign[@"name"] isKindOfClass:[NSString class]]) {
+                [hit set:campaign[@"name"] forKey:kGAICampaignName];
+            }
+            if ([campaign[@"content"] isKindOfClass:[NSString class]]) {
+                [hit set:campaign[@"content"] forKey:kGAICampaignContent];
+            }
+            if ([campaign[@"medium"] isKindOfClass:[NSString class]]) {
+                [hit set:campaign[@"medium"] forKey:kGAICampaignMedium];
+            }
+        } else {
             // https://developers.google.com/analytics/devguides/collection/ios/v3/campaigns
             SEGLog(@"WARNING: campaign source is a required field for GA. Omitting campaign attributes");
         }
