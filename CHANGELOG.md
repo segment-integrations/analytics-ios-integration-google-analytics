@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+Version 1.1.6 *(27th June, 2017)*
+-------------------------------------------
+*(Supports analytics-ios 3.+ and Google Analytics 3.14.+)*
+
+* [New Feature](https://github.com/segment-integrations/analytics-ios-integration-google-analytics/commit/0a23f5bee612399a2310f8d895cd1a050c0d1414): Maps campaign data to GA from `track` and `screen` calls when present in `context.campaign`.
+
 Version 1.1.5 *(4th November, 2016)*
 -------------------------------------------
 *(Supports analytics-ios 3.+ and Google Analytics 3.14.+)*
