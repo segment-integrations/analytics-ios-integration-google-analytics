@@ -43,4 +43,12 @@ Pod::Spec.new do |s|
     # Please manually add the following file preserved by Cocoapods to your your xcodeproj file
     workaround.preserve_paths = 'Pod/Classes/**/*'
   end
+
+  s.subspec 'StaticLibWorkaround2' do |workaround2|
+    # For users who are unable to bundle static libraries as dependencies
+    # you can choose this subspec, but be sure to include the following in your Podfile:
+    # pod 'GoogleAnalytics'
+    # pod 'GoogleIDFASupport' <- optional
+    workaround2.source_files = 'Pod/Classes/**/*'
+  end
 end
