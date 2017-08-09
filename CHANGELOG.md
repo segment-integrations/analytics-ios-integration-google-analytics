@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+Version 1.1.7 *(9th August, 2017)*
+----------------------------------
+*(Supports analytics-ios 3.+ and Google Analytics 3.14.+)*
+
+* [Experimental](https://github.com/segment-integrations/analytics-ios-integration-google-analytics/commit/78ea52afa16f152331368c96ca3e0e2e10042442): Try a newer workaround for static library issue.
+
+
 Version 1.1.6 *(27th June, 2017)*
 -------------------------------------------
 *(Supports analytics-ios 3.+ and Google Analytics 3.14.+)*
@@ -35,7 +42,7 @@ Version 1.1.2 *(7th June, 2016)*
 *(Supports analytics-ios 3.0.+)*
 
  * Add Core subspec for optional exclusion of Google IDFA Support.
- 
+
 Version 1.1.0 *(11th May, 2016)*
 -------------------------------------------
 *(Supports analytics-ios 3.0.+ and Google Analytics 3.14.+)*
