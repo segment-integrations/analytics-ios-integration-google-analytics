@@ -1,6 +1,5 @@
 # Analytics
 
-[![CI Status](http://img.shields.io/travis/segment-integrations/analytics-ios-integration-google-analytics.svg?style=flat)](https://travis-ci.org/segment-integrations/analytics-ios-integration-google-analytics)
 [![Version](https://img.shields.io/cocoapods/v/Segment-google-analytics.svg?style=flat)](http://cocoapods.org/pods/Segment-googleanalytics)
 [![License](https://img.shields.io/cocoapods/l/Segment-google-analytics.svg?style=flat)](http://cocoapods.org/pods/Segment-googleanalytics)
 
