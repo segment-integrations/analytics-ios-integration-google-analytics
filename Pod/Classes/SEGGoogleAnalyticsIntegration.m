@@ -1,10 +1,13 @@
-#import <GoogleAnalytics/GAIDictionaryBuilder.h>
-#import <GoogleAnalytics/GAIFields.h>
+#if !__has_include(<GAI.h>)
+    #error Cannot find Google Analytics. Did you add GoogleAnalytics to your dependencies?
+#endif
+
+#import <GAIDictionaryBuilder.h>
+#import <GAIFields.h>
+#import <GAI.h>
 #import <Analytics/SEGAnalyticsUtils.h>
 #import <Analytics/SEGAnalytics.h>
 #import "SEGGoogleAnalyticsIntegration.h"
-#import <GoogleAnalytics/GAI.h>
-
 
 @interface SEGGoogleAnalyticsIntegration ()
 
