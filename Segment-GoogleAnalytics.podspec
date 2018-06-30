@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.static_framework = true 
   s.dependency 'Analytics', '~> 3.0'
-  s.default_subspec = 'StaticLibWorkaround'
+  s.default_subspec = 'Core'
 
   s.subspec 'GoogleIDFASupport' do |idfa|
     # This will get bundled unless a subspec is specified
@@ -35,16 +35,4 @@ Pod::Spec.new do |s|
     # For users who don't want to bundle GoogleIDFASupport
     # If a user specified Segment-GoogleAnalytics/Core, we won't bundle IDFA
   end
-
-  s.subspec 'StaticLibWorkaround' do |workaround|
-    # For users who are unable to bundle static libraries as dependencies
-    # you can choose this subspec, but be sure to include the following in your Podfile:
-    # pod 'GoogleAnalytics'
-    # pod 'GoogleIDFASupport'  <- optional
-    workaround.source_files = 'Pod/Classes/**/*'
-    workaround.xcconfig = {
-        'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/GoogleAnalytics/Sources'
-    }
-  end
-
 end
