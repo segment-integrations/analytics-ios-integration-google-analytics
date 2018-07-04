@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+Version 1.2.0 *(4th July, 2018)*
+--------------------------------
+*(Supports analytics-ios 3.+ and Google Analytics 3.14.+)*
+
+* [Enhancement](https://github.com/segment-integrations/analytics-ios-integration-google-analytics/commit/6ed71e2ff457ad7f10fadf6fc3e95b5f0c6426f2): Fix issues related to `use_frameworks!` and transitive static libraries
+
+
 Version 1.1.7 *(9th August, 2017)*
 ----------------------------------
 *(Supports analytics-ios 3.+ and Google Analytics 3.14.+)*
