@@ -15,9 +15,9 @@ If you are using `use_frameworks!` and workarounds you may need to follow extra-
    $ pod --version
    1.5.3
    ```
-2. The `StaticLibWorkaround` subspec has been removed, please use the default subspec instead
-3. Remove references to the pod source files from your Xcode project if any
-4. Make sure to remove any remaining workarounds (e.g. `post_install` hooks)
+2. The `StaticLibWorkaround` subspec has been removed, use the default subspec instead
+3. Remove references to the pod source files from your Xcode target if any
+4. Remove any remaining workarounds (e.g. `post_install` hooks)
 5. *(optional)*  if you don't directly depend on Google Analytics you don't need to explicit depend on it anymore
 
 ###### Example
