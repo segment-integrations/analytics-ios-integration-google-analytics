@@ -22,6 +22,9 @@
     [config use:[SEGGoogleAnalyticsIntegrationFactory instance]];
     [SEGAnalytics setupWithConfiguration:config];
     [[SEGAnalytics sharedAnalytics] track:@"Test Google Analytics"];
+    [[SEGAnalytics sharedAnalytics] track:@"Deep Link Opened" properties:@{
+        @"url": @"http://test-site.com/index.html?utm_campaign=wow&utm_source=source&gclid=something"
+    }];
     [[SEGAnalytics sharedAnalytics] flush];
     [SEGAnalytics debug:YES];
     return YES;
