@@ -1,5 +1,9 @@
 Change Log
 ==========
+Version 1.3.0 *(9th January, 2019)*
+--------------------------------
+
+* [New](https://github.com/segment-integrations/analytics-ios-integration-google-analytics/commit/419491d9ff59b1f85e42eccad3f19d263b653b2c): Add support to send `setCampaignParametersFromUrl` to Google Analytics when a "Deep Link Opened" track event is fired. This will enable enhanced campaign data mappings like `utm_id` and `glcid` to be mapped and sent to Google Analytics. 
 
 Version 1.2.0 *(4th July, 2018)*
 --------------------------------
