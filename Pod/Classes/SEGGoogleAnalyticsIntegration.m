@@ -197,7 +197,7 @@
             [hit set:[properties objectForKey:key]
                 forKey:[GAIFields customMetricForIndex:metric]];
         }
-        
+
     }
 
     NSDictionary *campaign = context[@"campaign"];
@@ -226,9 +226,9 @@
 
     if ([event isEqualToString:@"Deep Link Opened"]) {
         [hit setCampaignParametersFromUrl:[properties valueForKey:@"url"]];
-        SEGLog(@"[hit setCampaignParametersFromUril: %@]", [properties valueForKey:@"url"]);
+        SEGLog(@"[hit setCampaignParametersFromUrl: %@]", [properties valueForKey:@"url"]);
     }
-    
+
     return [hit build];
 }
 
