@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Segment-GoogleAnalytics"
-  s.version          = "1.3.0"
+  s.version          = "1.3.1"
   s.summary          = "Google Analytics Integration for Segment's analytics-ios library."
 
   s.description      = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.static_framework = true
-  s.dependency 'Analytics', '~> 3.0'
+  s.dependency 'Analytics'
   s.default_subspec = 'GoogleIDFASupport'
 
   s.subspec 'GoogleIDFASupport' do |idfa|
