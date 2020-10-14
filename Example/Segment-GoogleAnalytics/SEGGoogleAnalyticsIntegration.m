@@ -1,7 +1,12 @@
 #import <GoogleAnalytics/GAIDictionaryBuilder.h>
 #import <GoogleAnalytics/GAIFields.h>
+#if defined(__has_include) && __has_include(<Analytics/SEGAnalytics.h>)
 #import <Analytics/SEGAnalyticsUtils.h>
 #import <Analytics/SEGAnalytics.h>
+#else
+#import <Segment/SEGAnalyticsUtils.h>
+#import <Segment/SEGAnalytics.h>
+#endif
 #import "SEGGoogleAnalyticsIntegration.h"
 #import <GoogleAnalytics/GAI.h>
 

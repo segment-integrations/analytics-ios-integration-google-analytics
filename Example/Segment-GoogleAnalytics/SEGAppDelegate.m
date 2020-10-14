@@ -7,7 +7,12 @@
 //
 
 #import "SEGAppDelegate.h"
+
+#if defined(__has_include) && __has_include(<Analytics/SEGAnalytics.h>)
 #import <Analytics/SEGAnalytics.h>
+#else
+#import <Segment/SEGAnalytics.h>
+#endif
 // Used together with `use_frameworks!`
 //#import "SEGGoogleAnalyticsIntegrationFactory.h"
 // Used without `use_frameworks!`
