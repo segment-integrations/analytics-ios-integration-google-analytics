@@ -22,6 +22,9 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.dependency 'Analytics'
   s.default_subspec = 'GoogleIDFASupport'
+  
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.subspec 'GoogleIDFASupport' do |idfa|
     # This will get bundled unless a subspec is specified

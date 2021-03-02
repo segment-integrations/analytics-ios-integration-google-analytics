@@ -5,6 +5,7 @@ Version 1.3.3 *(2nd March, 2021)*
 --------------------------------
 * Fixed compatibility issues w/ Analytics 4.x.
 * Updated Google Analytics to 3.17.
+* Due to Google not supporting Simulator arm64, this architecture must be excluded when building.
 
 Version 1.3.2 *(14th October, 2020)*
 --------------------------------
