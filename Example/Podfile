@@ -1,3 +1,5 @@
+platform :ios, '10.0'
+
 ## Without use_frameworks!
 
 target 'Segment-GoogleAnalytics_Example' do
